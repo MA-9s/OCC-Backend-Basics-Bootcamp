@@ -17,6 +17,7 @@ let sum = function(x,y){
 
 console.log(`Sum of ${a} and ${b}: ${sum(a,b)}`); // Output: 11
 
+
 // Exercise 2: Find Max
 // Declare a function named find Max that takes an array of numbers as a parameter and returns the maximum value in the array. Call the findMax function with your array of numbers and log the result to the console.
 
@@ -75,7 +76,9 @@ console.log(result2); // Should log: 1
 console.log(result3); // Should log: 12
 console.log(result4); // Should log: 1.333...
 
+
 // ++ BONUS:
+
 // Exercise 4: Function as a Parameter
 // Write a function called applyFunction that takes a function and an array as parameters. It should apply the given function to each element of the array and return a new array with the results.
 
