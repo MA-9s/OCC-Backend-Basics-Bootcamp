@@ -108,7 +108,7 @@ class person3 {
 let newPerson = new person3("Edward", 30);
 
 // Call the introduce method
-newPerson.introduce(); // This will print: Hello, my name is John and I am 30 years old.
+newPerson.introduce(); // This will print: Hello, my name is Edward and I am 30 years old.
 
 
 // Feel free to unleash your creativity and have fun with these tasks! Once you've completed the tasks, share your solutions and don't forget to push it on your GitHub repo! If you have any questions or encounter challenges, don't hesitate to ask for assistance. Happy coding!
