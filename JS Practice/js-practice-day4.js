@@ -63,18 +63,24 @@ function times(a,b){
     return a*b;
 }
 function divide(a,b){
-    return a/b;
+    if (b===0){
+        return "You tried dividing by 0. Its not possible."
+    } else{
+        return a/b;
+    }
 }
 
 let result1 = applyOperation(4,3,add);
 let result2 = applyOperation(4,3,minus);
 let result3 = applyOperation(4,3,times);
 let result4 = applyOperation(4,3,divide);
+let result5 = applyOperation(4,0,divide);
 
 console.log(result1); // Should log: 7
 console.log(result2); // Should log: 1
 console.log(result3); // Should log: 12
 console.log(result4); // Should log: 1.333...
+console.log(result5); // You tried dividing by 0. Its not possible.
 
 
 // ++ BONUS:
@@ -116,6 +122,24 @@ console.log(`The new array after filtering even numbers function: [${newEvenArra
 let newOddArray = applyFunction(myLongListArray, isOdd);
 console.log(`The new array after filtering odd numbers function: [${newOddArray}]`);
 
+//example given exercise 4
+
+console.log(' ')
+console.log('Exercise 4 given example')
+
+function applyFunction(func, array1) {
+    const result = [];
+    for (let item of array1) {
+      result.push(func(item));
+    }
+    return result;
+  }
+  
+  const numbers = [1, 2, 3, 4, 5];
+  const square = (x) => x * x;
+  console.log(applyFunction(square, numbers)); // Output: [1, 4, 9, 16, 25]
+
+
 
 // Exercise 5: Callback Functions
 // Create a function getUserData that simulates fetching user data from a server. It should accept a callback function as a parameter. Call the callback function with a user object once the data is retrieved.
@@ -155,3 +179,18 @@ function processFruitData(fruitData, itemNumber) {
 
 // Call getFruitData with the processFruitData callback
 getFruitData(processFruitData);
+
+
+//given example
+
+console.log(' ')
+console.log('Exercise 5 - Given example')
+
+function getUserData(callback) {
+    const user = { name: "John", age: 30 };
+    callback(user);
+  }
+  
+  getUserData(function (user) {
+    console.log("User Data: ", user);
+  });
